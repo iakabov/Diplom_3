@@ -8,7 +8,7 @@ import org.openqa.selenium.JavascriptExecutor; // ДОБАВИЛИ ИМПОРТ
 public class ProfilePage {
 
     private final By buttonExit = By.xpath(".//button[text()='Выход']");
-    private final By TitleProfile = By.xpath(".//a[text()='Профиль']");
+    private final By titleProfile = By.xpath(".//a[text()='Профиль']");
 
     private final WebDriver driver;
 
@@ -23,6 +23,6 @@ public class ProfilePage {
     }
 
     public boolean isTitleProfile() {
-        return driver.findElement(TitleProfile).isDisplayed();
+        return driver.findElement(titleProfile).isDisplayed();
     }
 }
